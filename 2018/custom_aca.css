@@ -359,7 +359,7 @@ margin-left: auto;
 
 	table#signuptable .fieldset,
 	form#contribution>table .fieldset {
-	  margin-left: 30px;
+/*	  margin-left: 30px;*/
 	}
 
 	table#signuptable input:not([type=radio]):not([type=checkbox]), table#signuptable textarea,
@@ -488,16 +488,6 @@ margin-left: auto;
 
 		}
 
-	input[type="radio"] + label {
-
-	}
-
-	table#signuptable input[type="radio"],
-	form#contribution>table input[type="radio"] {
-		display: inline;
-		margin-right: 10px;
-	}
-
 
 	input[type="checkbox"] + label {
 		text-transform: none;
@@ -597,8 +587,8 @@ margin-left: auto;
 	}
 	table#signuptable .fieldset,
 	form#contribution>table .fieldset {
-	  margin-left: 30px;
-	}
+/*	  margin-left: 30px;
+*/	}
 
 	table#signuptable input:not([type=radio]):not([type=checkbox]),
 	table#signuptable textarea,
@@ -896,7 +886,7 @@ margin-left: auto;
 
 	table#signuptable .fieldset,
 	form#contribution>table .fieldset {
-	  margin-left: 30px;
+/*	  margin-left: 30px;*/
 	}
 
 	table#signuptable input:not([type=radio]):not([type=checkbox]), table#signuptable textarea,
@@ -1112,7 +1102,7 @@ margin-left: auto;
 
 	table#signuptable .fieldset,
 	form#contribution>table .fieldset {
-	  margin-left: 30px;
+/*	  margin-left: 30px;*/
 	}
 
 	table#signuptable input:not([type=radio]):not([type=checkbox]), table#signuptable textarea,
@@ -1221,6 +1211,41 @@ h3 {
 
 p {
 	margin-bottom: 15px;
+}
+
+.continue-OC-warning {
+	appearance: none;
+	-webkit-appearance: none;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	background: #531078;
+	color: white;
+	float: right;
+	margin-bottom: 15px;
+}
+
+.continue-OC-warning:hover {
+	background: #855ba7;
+}
+
+.warning {
+	color: red;
+	clear: both;
+}
+
+.sep-label {
+	display: block;
+  margin-top: -21px;
+  margin-left: 20px;
+}
+
+.sep-list {
+	padding-top: 20px;
+}
+
+input[type="radio"] {
+	display: inline;
+	margin-right: 10px;
 }
 
 
