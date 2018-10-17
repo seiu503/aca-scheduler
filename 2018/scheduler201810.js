@@ -5,20 +5,24 @@ $(document).ready(function() {
   var kpsw;
   var moe = false;
   var opnEnr = false;
+  var appt2019 = false;
 
   function dateCheckOE() {
 
     var fDateOE = new Date(2018, 9, 15);
     var lDateOE = new Date(2018, 11, 15);
     var cDateOE = $.now();
+    console.log(cDateOE);
 
     if ((cDateOE <= lDateOE && cDateOE >= fDateOE)) {
       opnEnr = true;
-      console.log("Open Enrollment = true");
+    } else {
+      opnEnr = false;
     }
-    opnEnr = false;
+
   }
   dateCheckOE();
+  console.log(`Open Enrollment = ${opnEnr}`);
 
   // function dateCheckMOE() {
 
@@ -112,9 +116,11 @@ $(document).ready(function() {
 
   $(".Trust2019").change(function() {
     if ($("#Trust2019_0").is(':checked')) { // Yes
+      appt2019 = true;
       $("#OC-group").show(); // Other coverage
       $("#ReportChange-group").hide(); //
     } else if ($("#Trust2019_1").is(':checked')) { // No
+      appt2019 = false;
       $("#OC-group").hide(); // Other coverage
       $("#ReportChange-group").show(); // Which state?
 
@@ -178,16 +184,23 @@ $(document).ready(function() {
     // check whether open enrollment is active
     // and store the next question as a variable
     let nextQSEP;
-    if (opnEnr) {
+    if (opnEnr && appt2019) {
+      console.log('opnEnrYes');
+      console.log('reportChangeYes')
       nextQSEP = "#State-group";
+    } else if (opnEnr && !appt2019){
+      nextQSEP = "#T15";
     } else {
       nextQSEP = "#T15";
     }
     console.log(opnEnr);
     console.log(nextQSEP);
      if ($("#SEP_6").is(':checked')) { // None of the above
+      console.log(nextQSEP);
       $(nextQSEP).show(); // check back SEP outside OE
-      $("#State-group").hide(); // State
+      if (nextQSEP === "#T15") {
+        $("#State-group").hide(); // State
+      }
     } else if ($("#SEP_5").is(':checked') ||
                $("#SEP_4").is(':checked') ||
                $("#SEP_3").is(':checked') ||
