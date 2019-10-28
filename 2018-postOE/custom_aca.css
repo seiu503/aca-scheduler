@@ -1,0 +1,1260 @@
+/* BSD wrapper */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+
+
+
+
+  @-moz-document url-prefix() {
+  #banner {
+     padding-top: 30px;
+  }
+}
+
+#maincontent {
+  padding-top: 20px;
+}
+
+.container {
+	background: white;
+}
+
+.site-banner {
+	background: #531078;
+}
+
+#speakout {
+	padding: 0 20px;}
+
+div#speakout table#landing div.goal {
+	padding: 0 0 10px 20px;}
+
+#signup label.field,
+#contribution label.field,
+#contribution label {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+li {
+font-size: 16px;
+}
+
+div.label>label {
+	margin-left: 0px !important;
+}
+input {
+	/* -webkit-appearance: none; */
+    border-radius: 0;
+ }
+
+ table#signuptable input[name="submit-btn"],
+form#contribution>table input#processbutton {
+	 -webkit-appearance: none;
+ }
+
+
+body table#signuptable input#addr2 {
+margin-left: 30px !important;
+width: 91.75% !important;
+}
+
+body div.label {
+padding-top: 20px;
+height: auto;
+font-weight: bold !important;
+}
+
+select {
+margin-left: 30px;
+	max-width: 333px;
+}
+
+.fieldset select,
+form#contribution select {
+	margin-left: 0px;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.fl{
+color: #3B5998;
+text-decoration: underline;
+
+}
+
+.fl:hover {
+	color: red;
+}
+
+
+/* Contribution Pages */
+
+.bsd-contribForm-oneCol {
+	padding: 0px 20px;
+}
+
+td.contribcolumn td {
+display: block;
+}
+
+form#contribution>table>tbody {
+	margin-left: 30px;
+}
+
+label[for="legal_confirm"] p:first-child {
+	display: inline;
+	margin-bottom: 20px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+	line-height: 1em;
+}
+
+label[for="legal_confirm"] p:not(:first-child) {
+	margin-top: 10px;
+		font-size: 12px !important;
+		line-height: 14px !important;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+margin-bottom: 0px;
+}
+
+label[for="legal_confirm"] p:last-child {
+margin-bottom: 20px;
+}
+
+td#bsd-credit-card-header {
+padding-top: 10px;
+}
+
+#recurring_acknowledge label {
+	display: inline;
+	font-weight: bold;
+}
+
+.bsd-contribForm-aboveContent {
+	margin-bottom: 30px;
+}
+
+
+form#contribution>table>tbody>tr>td {
+	padding-left: 30px;
+}
+
+cc_type_cd:before {
+	content: '\a' ;
+	white-space: pre; }
+
+}
+
+body #contribution label {
+	font-weight: 300 !important;
+}
+
+#bsd-contribution-section-header-amount td {
+	padding-top: 10px;
+}
+
+#contribution input[name="amount_other"] {
+	margin-bottom: 0px;
+}
+
+.contribheader {
+	font-size: 14px;
+text-transform: uppercase;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+font-weight: bold;
+letter-spacing: .1em;
+}
+
+/* ===== == = === (iphone styles) === = == ===== */
+
+.iphone table#signuptable,
+.iphone form#contribution>table {
+width: 90%;
+max-width: none;
+margin-right: auto;
+margin-left: auto;
+}
+
+.iphone table#signuptable input:not([type=radio]):not([type=checkbox]), .iphone table#signuptable textarea, .iphone body table#signuptable input#addr2,
+.iphone form#contribution>table input:not([type=radio]):not([type=checkbox]), .iphone form#contribution>table textarea, .iphone body form#contribution>table input#addr2
+ {
+	width: 100%;
+	max-width: 280px;
+}
+
+.iphone select, .iphone div.input, .iphone label.field, .iphone div.fieldset {
+	max-width: 280px;
+}
+
+
+
+/* =============================== ====== =============================== */
+/* =============================== ====== =============================== */
+/* =============================== <30em =============================== */
+/* =============================== ====== =============================== */
+/* =============================== ====== =============================== */
+
+@media only screen and (max-width: 30em) {
+
+
+	body {
+	  background-color: #f5f5f5;
+	}
+	#main-header {
+	  background-color: #fff;
+	}
+
+	#banner {
+	  background-image: url(http://img.seiu.org/bluestate/locals/~2013GGS/responsive-header-BG.jpg);
+	}
+	#bar {
+	  height: 2em;
+	  background: linear-gradient(to bottom, #855ba7 0%,#6b4a87 83%);
+	  margin-bottom: 2em;
+	}
+
+		.container,
+		.container.sixteen.columns,
+		div.sixteen.columns {
+			width: 100% !important;
+			}
+	.fieldset, div.label, select {
+		width: 95%;
+		line-height: normal;
+		}
+
+	td > label {
+		margin-left: 10px;
+		padding-top: 20px;
+	}
+
+
+
+	#signupheader p {
+	font-size: 16px;
+	line-height: 1.5em;
+	}
+
+	#signupfooter p {
+		font-size: 1em;
+		line-height: 1.2em;
+
+	}
+
+	#signupheader, #signupfooter {
+		padding: 0px 20px !important;
+	}
+
+	#signupheader {
+		margin-bottom: 30px;
+	}
+
+	div.sixteen.columns>br {
+		display: none;
+	}
+
+	select {
+	margin-left: 30px;
+		max-width: 333px;
+	}
+
+	.fieldset select,
+	form#contribution select {
+		margin-left: 0px;
+	}
+
+
+	.bsd-signup-2352 #bsd-field-phone {
+		margin-bottom: 20px;
+	}
+
+	label, legend {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	letter-spacing: .1em;
+
+	}
+
+	select {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 300;
+	letter-spacing: .1em;
+	color: #000;
+	}
+
+	.label {
+		padding-bottom: 3px;
+	}
+	form#signup,
+	form#contribution {
+	/*background: #fff7d8 !important;*/
+	background: #fff !important;
+	width: 100%;
+	padding: 0px 0px;
+	float: none;
+	/*margin-left: -10px;*/
+	}
+
+
+
+	form#signup td,
+	form#contribution td {
+	padding-bottom: 0;
+	}
+
+
+
+	#required_note {
+		text-align: center;
+		text-transform: uppercase;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		letter-spacing: .1em;
+	font-weight: 300;
+	}
+
+	#required_note:after {
+	  content: '';
+	  display: block;
+	  height: 10px;
+	}
+
+	table#signuptable input:not([type=radio]):not([type=checkbox]):focus,
+	form#contribution>table input:not([type=radio]):not([type=checkbox]):focus {
+		-moz-box-shadow:    inset 0 0 5px #ffe04e;
+	   -webkit-box-shadow: inset 0 0 5px #ffe04e;
+	   box-shadow:         inset 0 0 5px #ffe04e;
+	}
+
+	table#signuptable,
+	form#contribution>table {
+	position: relative;
+	margin: 20px auto;
+	padding: 30px;
+	width: 100%;
+	max-width: 400px;
+	min-height: 200px;
+	z-index: 100;
+	border: 1px solid #562078;
+	background: #F9F9F9;
+	box-shadow: 0px 1px 6px #3F3F3F;
+
+	}
+
+	table#signuptable > tbody:before,
+	table#signuptable > tbody:after{
+	  content: '';
+	  display: block;
+/*	  height: 20px;*/
+	}
+
+	table#signuptable .fieldset,
+	form#contribution>table .fieldset {
+/*	  margin-left: 30px;*/
+	}
+
+	table#signuptable input:not([type=radio]):not([type=checkbox]), table#signuptable textarea,
+	form#contribution>table input:not([type=radio]):not([type=checkbox]), form#contribution>table textarea {
+	outline: none;
+	display: block;
+	width: 100%;
+	max-width: 320px;
+	padding: 4px 8px;
+	border: 1px solid #DBDBDB;
+	color: #3F3F3F;
+	font-family: 'Droid Sans',Tahoma,Arial,Verdana sans-serif;
+	font-size: 14px;
+	border-radius: 2px;
+	transition: background 0.2s linear, box-shadow 0.6s linear;
+	}
+
+	table#signuptable input[name="submit-btn"],
+	form#contribution>table input#processbutton {
+		background: #562078;
+		color: #fff !important;
+		width: 100%;
+		text-transform: uppercase;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		letter-spacing: .1em;
+	font-weight: 300;
+	}
+
+	table#signuptable input[name="submit-btn"]:hover,
+	table#signuptable input[name="submit-btn"]:active,
+	table#signuptable input[name="submit-btn"]:focus,
+	form#contribution>table input#processbutton:hover,
+	form#contribution>table input#processbutton:active,
+	form#contribution>table input#processbutton:focus {
+		background: #673786;
+		color: #ffd119;
+
+	}
+
+	 .signuperror {
+	position: relative;
+	display: block;
+	text-align: center;
+	}
+}
+
+/* =============================== ====== =============================== */
+/* =============================== ====== =============================== */
+/* =============================== 30-48em =============================== */
+/* =============================== ====== =============================== */
+/* =============================== ====== =============================== */
+
+
+@media only screen and (max-width: 48em) and (min-width: 30em) {
+
+	#banner {
+		background-image: url(http://img.seiu.org/bluestate/locals/~2013GGS/responsive-header-BG.jpg);
+	}
+
+	#bar {
+	  height: 2em;
+	  background: linear-gradient(to bottom, #855ba7 0%,#6b4a87 83%);
+	  margin-bottom: 2em;
+	}
+
+	#signupheader, #signupfooter {
+		padding: 0 20px 20px 20px !important;
+
+		}
+
+	div.sixteen.columns>br {
+			display: none;
+		}
+
+	form#signup,
+	form#contribution {
+		background: #fff7d8 !important;
+		width: 100%;
+		padding: 30px 0px;
+		float: none;
+		margin-left: -10px;
+		}
+
+	.fieldset, div.label, select {
+		width: 100%;
+		line-height: normal;
+		}
+
+	td > label {
+		margin-left: 10px;
+		padding-top: 20px;
+	}
+
+	#signupheader p {
+		font-size: 16px;
+		line-height: 1.5em;
+		}
+
+	#signupfooter p {
+		font-size: 1em;
+		line-height: 1.2em;
+		/* padding: 0px 20px; */
+	}
+
+	select {
+		margin-left: 30px;
+		width: 100%;
+			max-width: 333px;
+		}
+
+	.fieldset select,
+		form#contribution select {
+			margin-left: 0px;
+		}
+
+	.bsd-signup-2352 #bsd-field-phone {
+			margin-bottom: 20px;
+		}
+
+	label, legend {
+		font-size: 14px;
+		text-transform: uppercase;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 300;
+		letter-spacing: .1em;
+
+		}
+
+
+	input[type="checkbox"] + label {
+		text-transform: none;
+		margin-left: 10px;
+		letter-spacing: normal;
+		}
+
+	input[type="radio"] + label {
+		text-transform: none;
+		margin-left: 10px;
+		letter-spacing: normal;
+		}
+
+	input[type="checkbox"] {
+		display: inline;
+		margin-right: 10px;
+	}
+
+	.label>label {
+		font-weight: bold;
+		}
+
+	select {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 300;
+	letter-spacing: .1em;
+	color: #000;
+	}
+
+	.label {
+			padding-bottom: 3px;
+		}
+
+	form#signup,
+	form#contribution {
+		background: #fff !important;
+		width: 100%;
+		padding: 0px 0px;
+		float: none;
+		}
+
+
+
+	form#signup td,
+	form#contribution td {
+		padding-bottom: 0;
+		padding-right: 20px;
+		}
+
+	.input>table {
+		margin-top: 5px;
+		}
+
+
+
+	#required_note {
+		text-align: center;
+		text-transform: uppercase;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		letter-spacing: .1em;
+	font-weight: 300;
+	}
+
+	#required_note:after {
+	  content: '';
+	  display: block;
+	  height: 10px;
+	}
+
+	table#signuptable input:not([type=radio]):not([type=checkbox]):focus,
+	form#contribution>table input:not([type=radio]):not([type=checkbox]):focus {
+		-moz-box-shadow:    inset 0 0 5px #ffe04e;
+	   -webkit-box-shadow: inset 0 0 5px #ffe04e;
+	   box-shadow:         inset 0 0 5px #ffe04e;
+	}
+
+	table#signuptable,
+	form#contribution>table {
+		position: relative;
+		margin: 20px auto;
+		padding: 30px;
+		width: 100%;
+		max-width: 400px;
+		min-height: 200px;
+		z-index: 100;
+		border: 1px solid #562078;
+		background: #F9F9F9;
+		box-shadow: 0px 1px 6px #3F3F3F;
+
+		}
+
+	table#signuptable > tbody:before,
+	table#signuptable > tbody:after {
+	  content: '';
+	  display: block;
+	  height: 20px;
+	}
+	table#signuptable .fieldset,
+	form#contribution>table .fieldset {
+/*	  margin-left: 30px;
+*/	}
+
+	table#signuptable input:not([type=radio]):not([type=checkbox]),
+	table#signuptable textarea,
+	form#contribution>table input:not([type=radio]):not([type=checkbox]),
+	form#contribution>table textarea {
+		outline: none;
+		display: block;
+		width: 100%;
+		max-width: 320px;
+		padding: 4px 8px;
+		border: 1px solid #DBDBDB;
+		color: #3F3F3F;
+		font-family: 'Droid Sans',Tahoma,Arial,Verdana sans-serif;
+		font-size: 14px;
+		border-radius: 2px;
+		transition: background 0.2s linear, box-shadow 0.6s linear;
+		}
+
+	table#signuptable input[name="submit-btn"],
+	form#contribution>table input#processbutton {
+		background: #562078;
+		color: #fff !important;
+		width: 100%;
+		text-transform: uppercase;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		letter-spacing: .1em;
+	font-weight: 300;
+	}
+
+	table#signuptable input[name="submit-btn"]:hover,
+	table#signuptable input[name="submit-btn"]:active,
+	table#signuptable input[name="submit-btn"]:focus,
+	form#contribution>table input#processbutton:hover,
+	form#contribution>table input#processbutton:active,
+	form#contribution>table input#processbutton:focus {
+		background: #673786;
+		color: #ffd119;
+
+	}
+
+	 .signuperror {
+			position: relative;
+			display: block;
+			text-align: center;
+			}
+
+}
+
+
+/* =============================== ====== =============================== */
+/* =============================== ====== =============================== */
+/* =============================== >48em =============================== */
+/* =============================== ====== =============================== */
+/* =============================== ====== =============================== */
+
+@media only screen and (min-width : 48em) {
+
+	#signupheader {
+	width: 100%;
+	padding: 0 20px 20px 20px !important;
+
+	}
+
+	#signupfooter {
+		width: 90%;
+	}
+
+	form#signup,
+	form#contribution {
+	background: #fff7d8 !important;
+	width: 100%;
+	padding: 30px 0px;
+	float: none;
+	margin-left: -10px;
+	}
+
+	.container .sixteen.columns {
+	width: 100%;
+
+	}
+
+	.signuperror {
+	display: block;
+	text-align: center;
+
+	}
+
+	select {
+	margin-left: 30px;
+	width: 100%;
+		max-width: 333px;
+	}
+
+	.fieldset select,
+	form#contribution select {
+		margin-left: 0px;
+	}
+
+}
+
+/* =============================== ====== =============================== */
+/* =============================== ====== =============================== */
+/* =============================== 48-60em =============================== */
+/* =============================== ====== =============================== */
+/* =============================== ====== =============================== */
+
+@media only screen and (max-width: 60em) and (min-width: 48em) {
+
+	body {
+		background-color: #f5f5f5;
+	}
+
+	#main-content {
+		background: #fff;
+		padding-top: 20px;
+		margin-top: -30px;
+	}
+
+	.container {
+		width: 90%;
+	}
+
+	.container .columns {
+		margin: 0px;
+	}
+
+	#banner {
+	background-image: url(http://img.seiu.org/bluestate/locals/~2013GGS/responsive-header-BG.jpg);
+	margin-left: 0px;
+	width: 100%;
+	}
+
+	#bar {
+	  height: 2em;
+	  background: linear-gradient(to bottom, #855ba7 0%,#6b4a87 83%);
+	  margin-bottom: 2em;
+	}
+
+	#signupheader {
+	width: 100%;
+	padding: 0 20px 20px 20px !important;
+
+	}
+
+	#signupfooter {
+		width: 90%;
+		padding-left: 0px;
+		margin: auto;
+	}
+
+	form#signup,
+	form#contribution {
+	background: #fff7d8 !important;
+	width: 100%;
+	padding: 30px 0px;
+	float: none;
+	margin-left: 0px;
+	}
+
+	.container .sixteen.columns {
+	width: 100%; }
+
+	.fieldset, div.label, select {
+		width: 100%;
+		line-height: normal; }
+
+	td > label {
+		margin-left: 10px;
+		padding-top: 20px;
+	}
+
+	body div.label {
+	padding-top: 20px;
+	height: auto;
+	font-weight: bold !important;
+	}
+
+	#signupheader p {
+	font-size: 16px;
+	line-height: 1.5em;
+	}
+
+	#signupfooter p {
+		font-size: 1em;
+		line-height: 1.2em;
+
+	}
+
+	#signupheader, #signupfooter {
+		padding: 0px 20px;
+	}
+
+	#signupheader {
+		margin-bottom: 30px;
+	}
+
+	div.sixteen.columns>br {
+		display: none;
+	}
+
+	select {
+	margin-left: 30px;
+		max-width: 333px;
+	}
+
+	.fieldset select,
+	form#contribution select {
+		margin-left: 0px;
+	}
+
+	.bsd-signup-2352 #bsd-field-phone {
+		margin-bottom: 20px;
+	}
+
+	label, legend {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	letter-spacing: .1em;
+
+	}
+
+	select {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 300;
+	letter-spacing: .1em;
+	color: #000;
+	}
+
+	.label {
+		padding-bottom: 3px;
+	}
+	form#signup,
+	form#contribution {
+	/*background: #fff7d8 !important;*/
+	background: #fff !important;
+	width: 100%;
+	padding: 0px 0px;
+	float: none;
+	/*margin-left: -10px;*/
+	}
+
+
+
+	form#signup td,
+	form#contribution td {
+	padding-bottom: 0;
+	}
+
+
+
+	#required_note {
+		text-align: center;
+		text-transform: uppercase;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		letter-spacing: .1em;
+	font-weight: 300;
+	}
+
+	#required_note:after {
+	  content: '';
+	  display: block;
+	  height: 10px;
+	}
+
+	table#signuptable input:not([type=radio]):not([type=checkbox]):focus,
+	form#contribution>table input:not([type=radio]):not([type=checkbox]):focus {
+		-moz-box-shadow:    inset 0 0 5px #ffe04e;
+	   -webkit-box-shadow: inset 0 0 5px #ffe04e;
+	   box-shadow:         inset 0 0 5px #ffe04e;
+	}
+
+	table#signuptable,
+	form#contribution>table {
+	position: relative;
+	margin: 20px auto;
+	padding: 30px;
+	width: 100%;
+	max-width: 400px;
+	min-height: 200px;
+	z-index: 100;
+	border: 1px solid #562078;
+	background: #F9F9F9;
+	box-shadow: 0px 1px 6px #3F3F3F;
+
+	}
+
+	table#signuptable > tbody:before,
+	table#signuptable > tbody:after{
+	  content: '';
+	  display: block;
+	  height: 20px;
+	}
+
+	table#signuptable .fieldset,
+	form#contribution>table .fieldset {
+/*	  margin-left: 30px;*/
+	}
+
+	table#signuptable input:not([type=radio]):not([type=checkbox]), table#signuptable textarea,
+	form#contribution>table input:not([type=radio]):not([type=checkbox]), form#contribution>table textarea {
+	outline: none;
+	display: block;
+	width: 100%;
+	max-width: 320px;
+	padding: 4px 8px;
+	border: 1px solid #DBDBDB;
+	color: #3F3F3F;
+	font-family: 'Droid Sans',Tahoma,Arial,Verdana sans-serif;
+	font-size: 14px;
+	border-radius: 2px;
+	transition: background 0.2s linear, box-shadow 0.6s linear;
+	}
+
+	table#signuptable input[name="submit-btn"],
+	form#contribution>table input#processbutton {
+		background: #562078;
+		color: #fff !important;
+		width: 100%;
+		text-transform: uppercase;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		letter-spacing: .1em;
+	font-weight: 300;
+	}
+
+	table#signuptable input[name="submit-btn"]:hover,
+	table#signuptable input[name="submit-btn"]:active,
+	table#signuptable input[name="submit-btn"]:focus,
+	form#contribution>table input#processbutton:hover,
+	form#contribution>table input#processbutton:active,
+	form#contribution>table input#processbutton:focus {
+		background: #673786;
+		color: #ffd119;
+
+	}
+
+	 .signuperror {
+	position: relative;
+	display: block;
+	text-align: center;
+	}
+
+}
+
+/* =============================== ====== =============================== */
+/* =============================== ====== =============================== */
+/* =============================== >60 em =============================== */
+/* =============================== ====== =============================== */
+/* =============================== ====== =============================== */
+
+@media only screen and (min-width : 60em) {
+
+	body {
+		background-color: #f5f5f5;
+	}
+
+	#main-content {
+		background: #fff;
+		padding-top: 20px;
+		margin-top: -30px;
+	}
+
+	.container {
+	width: 90%;
+	max-width: 920px;
+	}
+
+	.container .columns {
+		margin: 0px;
+	}
+
+	#banner {
+	background-image: url(http://img.seiu.org/bluestate/locals/~2013GGS/responsive-header-BG.jpg);
+	margin-left: 0px;
+	/*width: 100%;*/
+	}
+
+	#bar {
+	  height: 2em;
+	  background: linear-gradient(to bottom, #855ba7 0%,#6b4a87 83%);
+	  margin-bottom: 2em;
+	}
+
+
+
+	form#signup,
+	form#contribution,
+	#signupfooter {
+	background: transparent !important;
+	padding-top: 0px;
+	width: 45%;
+	}
+
+	form#signup {
+		float:right;
+		clear: none;
+		margin-left: 0px;
+	}
+
+	td > label {
+		margin-left: 10px;
+		padding-top: 20px;
+	}
+
+	#signupheader p {
+	font-size: 16px;
+	line-height: 1.5em;
+	}
+
+	#signupheader {
+		min-width: 50%;
+		padding: 20px !important;
+	}
+
+	select {
+	margin-left: 30px;
+	width: 100%;
+		max-width: 333px;
+	}
+
+	.fieldset select,
+	form#contribution select {
+		margin-left: 0px;
+	}
+
+	.bsd-signup-2352 #bsd-field-phone {
+		margin-bottom: 20px;
+	}
+
+	label, legend {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	letter-spacing: .1em;
+
+	}
+
+	select {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 300;
+	letter-spacing: .1em;
+	color: #000;
+	}
+
+	.label {
+		padding-bottom: 3px;
+	}
+	form#signup,
+	form#contribution {
+	/*background: #fff7d8 !important;*/
+	background: #fff !important;
+	width: 100%;
+	padding: 0px 0px;
+	float: none;
+	/*margin-left: -10px;*/
+	}
+
+
+
+	form#signup td,
+	form#contribution td {
+	padding-bottom: 0;
+	}
+
+
+
+	#required_note {
+		text-align: center;
+		text-transform: uppercase;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		letter-spacing: .1em;
+	font-weight: 300;
+	}
+
+	#required_note:after {
+	  content: '';
+	  display: block;
+	  height: 10px;
+	}
+
+	table#signuptable input:not([type=radio]):not([type=checkbox]):focus,
+	form#contribution>table input:not([type=radio]):not([type=checkbox]):focus {
+		-moz-box-shadow:    inset 0 0 5px #ffe04e;
+	   -webkit-box-shadow: inset 0 0 5px #ffe04e;
+	   box-shadow:         inset 0 0 5px #ffe04e;
+	}
+
+	table#signuptable,
+	form#contribution>table {
+	position: relative;
+	margin: 20px auto;
+	padding: 30px;
+	width: 100%;
+	max-width: 400px;
+	min-height: 200px;
+	z-index: 100;
+	border: 1px solid #562078;
+	background: #F9F9F9;
+	box-shadow: 0px 1px 6px #3F3F3F;
+
+	}
+
+	table#signuptable > tbody:before,
+	table#signuptable > tbody:after{
+	  content: '';
+	  display: block;
+/*	  height: 20px;*/
+	}
+
+	table#signuptable .fieldset,
+	form#contribution>table .fieldset {
+/*	  margin-left: 30px;*/
+	}
+
+	table#signuptable input:not([type=radio]):not([type=checkbox]), table#signuptable textarea,
+	form#contribution>table input:not([type=radio]):not([type=checkbox]), form#contribution>table textarea {
+	outline: none;
+	display: block;
+	width: 100%;
+	max-width: 340px;
+	padding: 4px 8px;
+	border: 1px solid #DBDBDB;
+	color: #3F3F3F;
+	font-family: 'Droid Sans',Tahoma,Arial,Verdana sans-serif;
+	font-size: 14px;
+	border-radius: 2px;
+	transition: background 0.2s linear, box-shadow 0.6s linear;
+	}
+
+	table#signuptable input[name="submit-btn"],
+	form#contribution>table input#processbutton {
+		background: #562078;
+		color: #fff !important;
+		/*width: 100%; */
+		text-transform: uppercase;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		letter-spacing: .1em;
+	font-weight: 300;
+	}
+
+	table#signuptable input[name="submit-btn"]:hover,
+	table#signuptable input[name="submit-btn"]:active,
+	table#signuptable input[name="submit-btn"]:focus,
+	form#contribution>table input#processbutton:hover,
+	form#contribution>table input#processbutton:active,
+	form#contribution>table input#processbutton:focus {
+		background: #673786;
+		color: #ffd119;
+
+	}
+
+
+
+
+
+	#signupfooter {
+		width: 90%;
+		margin: auto;
+
+	}
+
+	#signupfooter p {
+		font-size: smaller;
+		line-height: 1.2em;
+	}
+
+	 .signuperror {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	}
+}
+
+.b_container {
+	z-index: 150 !important;
+}
+
+/* Pardot fixes 2016 */
+
+
+ form.form p.no-label, form.form p.email-pref, form.form p.submit {
+    margin: .2em .5em .8em .5em !important;
+    padding: 0;
+}
+
+label, legend {
+    font-size: 14px;
+    text-transform: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
+    letter-spacing: normal;
+}
+
+form.form p label.inline {
+	font-weight: bold !important;
+	margin-left: -18px !important;}
+
+form.form p label {
+    padding: 0 13px !important;
+    font-weight: bold !important; }
+
+#pardot-form > p.form-field.pd-email.required {
+	margin-bottom: 20px; }
+
+	.cz:hover {
+		background-color: yellow !important;}
+
+
+/* 2018 cleanup */
+
+.row {
+	display: flex;
+}
+
+h3 {
+	padding: 20px 0;
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+.continue-OC-warning {
+	appearance: none;
+	-webkit-appearance: none;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	background: #531078;
+	color: white;
+	float: right;
+	margin-bottom: 15px;
+}
+
+.continue-OC-warning:hover {
+	background: #855ba7;
+}
+
+.warning {
+	color: red;
+	clear: both;
+}
+
+.sep-label {
+	display: block;
+  margin-top: -21px;
+  margin-left: 20px;
+}
+
+.sep-list {
+	padding-top: 20px;
+}
+
+input[type="radio"] {
+	display: inline;
+	margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+ /* ==================== */
