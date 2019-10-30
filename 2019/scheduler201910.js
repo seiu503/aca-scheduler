@@ -8,11 +8,11 @@ $(document).ready(function() {
   var appt2019 = false;
 
   function dateCheckOE() {
-
-    var fDateOE = new Date(2018, 9, 15);
-    var lDateOE = new Date(2018, 11, 15);
-    var cDateOE = $.now();
-    console.log(cDateOE);
+    var options = { year: "numeric", month: "short", day: "numeric" };
+    var fDateOE = new Date('11/1/2019');
+    var lDateOE = new Date('12/15/2019');
+    var cDateOE = new Date();
+    console.log(cDateOE.toLocaleDateString("en-US", options));
 
     if ((cDateOE <= lDateOE && cDateOE >= fDateOE)) {
       opnEnr = true;
